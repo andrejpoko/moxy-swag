@@ -1,0 +1,12 @@
+[
+  { "username": "standard_user", "canLogin": true },
+  {
+    "username": "locked_out_user",
+    "canLogin": false,
+    "errMessage": "Epic sadface: Sorry, this user has been locked out."
+  },
+  { "username": "problem_user", "canLogin": true },
+  { "username": "performance_glitch_user", "canLogin": true },
+  { "username": "error_user", "canLogin": true },
+  { "username": "visual_user", "canLogin": true }
+]

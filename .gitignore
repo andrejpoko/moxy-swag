@@ -1,1 +1,2 @@
 node_modules/
+# cypress.env.json # uncommented in case of life project and PW managed in env variables

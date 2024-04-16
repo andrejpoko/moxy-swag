@@ -10,5 +10,5 @@
     "module": "commonjs",
     "moduleResolution": "node"
   },
-  "include": ["cypress/**/*.ts"]
+  "include": ["cypress/**/*.ts", "cypress/support/index.d.ts"]
 }

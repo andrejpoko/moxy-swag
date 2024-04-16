@@ -23,3 +23,19 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('getBySel', (selector, ms?) =>
+  cy.get(`[data-test="${selector}"]`, { timeout: ms })
+);
+
+Cypress.Commands.add('login', (username) => {
+  cy.getBySel('username').clear().type(username);
+  cy.getBySel('password').clear().type(Cypress.env('password'));
+  cy.getBySel('login-button').click();
+});
+
+Cypress.Commands.add('logout', () => {
+  cy.getBySel('primary-header').find('.bm-burger-button').click();
+  cy.getBySel('logout-sidebar-link').click();
+  cy.url().should('eq', 'https://www.saucedemo.com/');
+});
