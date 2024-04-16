@@ -5,5 +5,9 @@ Covered by Cypress
 ## Tested Areas
 
 - **Login**
-- **Filter**
 - **Purchase flow**
+- **Filter**
+
+## Installation & Usage
+-npm install
+-npm run cy:open
